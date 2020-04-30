@@ -8,3 +8,8 @@ workflows:
     jobs:
       - maven/test # checkout, build, test, and upload test results
 
+language: java
+jdk:
+  - openjdk8
+before_install:
+  - chmod +x mvnw
